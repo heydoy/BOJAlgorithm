@@ -39,7 +39,7 @@ func solution(_ relation:[[String]]) -> Int {
             break
         }
         
-        /// 
+        /// 아직도 dfs, bfs를 모르겠네.. 
         func dfs(step: Int, next: Int, r: Int) {
             if step == r {
                 if combineCandidateKeys(tmp) {
