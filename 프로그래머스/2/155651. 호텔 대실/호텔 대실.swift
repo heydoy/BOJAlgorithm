@@ -32,7 +32,7 @@ func solution(_ bookTime: [[String]]) -> Int {
         }
         
         heap.append(end + 10) // 종료시간 + 10분의 청소시간이 필요함 
-        heap.sort() // 큐 우선순위 최적화를 위화여 재정렬 
+        heap.sort() // 큐 우선순위 최적화를 위화여 재정렬 -> 이것 때문에 시간초과가 남 
     }
     
     return answer
