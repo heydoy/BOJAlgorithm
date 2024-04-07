@@ -1,6 +1,4 @@
-import Foundation
-
-/// 위로 이동 
+ 
 func moveUp(_ board: [[Int]]) -> [[Int]] {
     var newList = [[Int]](repeating: [Int](repeating: 0, count: n), count: n)
     
@@ -36,7 +34,6 @@ func moveUp(_ board: [[Int]]) -> [[Int]] {
     return newList
 }
 
-/// 오른쪽으로 이동
 func moveRight(_ board: [[Int]]) -> [[Int]] {
     var newList = [[Int]](repeating: [Int](repeating: 0, count: n), count: n)
     
@@ -72,7 +69,6 @@ func moveRight(_ board: [[Int]]) -> [[Int]] {
     return newList
 }
 
-/// 아래로 이동 
 func moveDown(_ board: [[Int]]) -> [[Int]] {
     var newList = [[Int]](repeating: [Int](repeating: 0, count: n), count: n)
     
@@ -108,7 +104,6 @@ func moveDown(_ board: [[Int]]) -> [[Int]] {
     return newList
 }
 
-/// 왼쪽으로 이동 
 func moveLeft(_ board: [[Int]]) -> [[Int]] {
     var newList = [[Int]](repeating: [Int](repeating: 0, count: n), count: n)
     
@@ -144,9 +139,7 @@ func moveLeft(_ board: [[Int]]) -> [[Int]] {
     return newList
 }
 
-/// DFS
 func dfs(_ board: [[Int]], _ num: Int) {
-    // 이동횟수가 5번이 되면 게임이 종료 
     if num == 5 {
         for i in 0..<n {
             for j in 0..<n {
@@ -169,7 +162,6 @@ func dfs(_ board: [[Int]], _ num: Int) {
     dfs(t, num + 1)
 }
 
-// 가져온 값 세팅 
 var n = Int(readLine()!)!
 var board = [[Int]]()
 
